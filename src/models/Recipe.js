@@ -5,20 +5,35 @@ const recipeSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    description:{
-        type:String,
+    description: {
+        type: String,
+        required: true,
+        minlength: 20,
+        maxlength: 200
+    },
+    cookingTime: {
+        type: String,
         required: true,
     },
-    images:{
-        type:[{
-            type:String,
+    portions: {
+        type: String,
+        required: true,
+    },
+    images: {
+        type: [{
+            type: String,
         }]
     },
-    ingredients:{
-        type:
+    ingredients: {
+        type: mongoose.Types.ObjectId,
+        ref: 'Ingredient',
+    },
+    category: {
+        type: String,
+        required: true,
     }
 });
 
-const Recipe = mongoose.model('Recipe',recipeSchema);
+const Recipe = mongoose.model('Recipe', recipeSchema);
 
 module.exports = Recipe;

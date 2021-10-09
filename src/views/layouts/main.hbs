@@ -14,6 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
         crossorigin="anonymous"></script>
+   
     <link rel="stylesheet" href="/css/site.css">
     <title>Мойте рецепти</title>
 </head>
@@ -21,23 +22,15 @@
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
-            <a href="/"><img src="siteLogoAlt.png" class="site-logo" /></a>
-            <a href="#" class="navbar-brand"><img src="bread_icon.svg"> Закуски и тестени</a>
-            <a href="#" class="navbar-brand"><img src="salad_icon.svg"> Салати</a>
-            <a href="#" class="navbar-brand"><img src="soup_icon.svg"> Супички</a>
-            <a href="#" class="navbar-brand"><img src="main_icon.svg"> Основни</a>
-            <a href="#" class="navbar-brand"><img src="desserts_icon.svg"> Десерти</a>
-            <a href="#" class="navbar-brand"><img src="drinks_icon.svg"> Напитки</a>
-            <a href="#" class="navbar-brand"><img src="winter_food_icon.svg"> Зимнина</a>
-            <form class="form-inline my-2 my-lg-0">
-                <div class="input-group">
-                    <input class="form-control" id="address-bar" type="search" placeholder="Потърси рецепта"
-                        aria-label="Search">
-                    <div class="input-group-append">
-                        <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-            </form>
+            <a href="/"><img src="/images/siteLogoAlt.png" class="site-logo" /></a>
+            <a href="/recipes/breads" class="navbar-brand"><img src="/images/bread_icon.svg"> Закуски и тестени</a>
+            <a href="/recipes/salads" class="navbar-brand"><img src="/images/salad_icon.svg"> Салати</a>
+            <a href="/recipes/soups" class="navbar-brand"><img src="/images/soup_icon.svg"> Супички</a>
+            <a href="/recipes/mains" class="navbar-brand"><img src="/images/main_icon.svg"> Основни</a>
+            <a href="/recipes/desserts" class="navbar-brand"><img src="/images/desserts_icon.svg"> Десерти</a>
+            <a href="/recipes/drinks" class="navbar-brand"><img src="/images/drinks_icon.svg"> Напитки</a>
+            <a href="/recipes/winter-foods" class="navbar-brand"><img src="/images/winter_food_icon.svg"> Зимнина</a>
+            <a href="recipes/add" class="navbar-brand"><i class="fas fa-plus-circle"></i> Добави рецепта</a>
         </div>
     </nav>
     <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
